@@ -10,6 +10,8 @@ int main() {
     float Area;
     float PIB;
     int pontoTuristico;
+    float densidadePopulacional;
+    float PIBPerCapita;
     // Carta 2
     char Estado2; 
     char codigoDaCarta2[50];
@@ -18,6 +20,8 @@ int main() {
     float Area2;
     float PIB2;
     int pontoTuristico2;
+    float densidadePopulacional2;
+    float PIBPerCapita2;
 
     printf("Digite uma letra do Estado: \n"); // aqui utilizei o \n para pular a linha para baixo.
     scanf("%c", &Estado); // aqui será inserido apenas uma letra pelo usuario e o scanf vai armazenar o dado dentro da vairiavel Estado.
@@ -39,6 +43,10 @@ int main() {
 
     printf("Digite o numero total de ponto turistico da Cidade: \n");
     scanf("%d", &pontoTuristico); // o ponto turistico em numero Decimal.
+
+    densidadePopulacional = (float)populacao / Area; // Aqui primeiro eu convertir a população para o tipo float e depois foi feito a divisão
+
+    PIBPerCapita = PIB / ((float)populacao); // Aqui eu fiz com que a população fosse convertido para float e depois foi feito a divisão
     
     // PRINTF E SCANF DA CARTA 2;
 
@@ -63,6 +71,10 @@ int main() {
     printf("Digite o numero total de ponto turistico da Cidade: \n"); // o numero total do ponto turistico da cidade nova.
     scanf("%d", &pontoTuristico2); 
 
+    densidadePopulacional2 =  (float)populacao2 / Area2;
+
+    PIBPerCapita2 = PIB2 / ((float)populacao2);
+
 
     printf("Carta 1:\n"); // aqui é para separar as Cartas.
     printf("Estado: %c\n", Estado); // aqui será imprimido a letra que foi digitada e armazenada na variavel Estado.
@@ -72,6 +84,8 @@ int main() {
     printf("Área(Km): %.2f\n", Area); // aqui será imprimido a área em ponto flutuante apenas com 2 casas decimal.
     printf("PIB: %.2f\n", PIB); // aqui será imprimido o PIB da cidade em ponto flutuante com 2 casas decimal.
     printf("Pontos Turisticos: %d\n", pontoTuristico); // aqui será imprimido o ponto turistico em Decimal.
+    printf("Densidade Populacional: %.2f\n", densidadePopulacional); // aqui o resultado da divisão da população pela Area.
+    printf("PIB Per Capita: %.2f\n", PIBPerCapita); // aqui o resultado da divisão do PIB pela população.
 
     printf("Carta 2:\n"); 
     printf("Estado: %c\n", Estado2); 
@@ -81,6 +95,8 @@ int main() {
     printf("Área(Km): %.2f\n", Area2); 
     printf("PIB: %.2f\n", PIB2); 
     printf("Pontos Turisticos: %d\n", pontoTuristico2); 
+    printf("Densidade Populacional: %.2f\n", densidadePopulacional2);
+    printf("PIB Per Capita: %.2f\n", PIBPerCapita2);
 
     return 0;
 

@@ -84,8 +84,8 @@ int main() {
     printf("Área(Km): %.2f\n", Area); // aqui será imprimido a área em ponto flutuante apenas com 2 casas decimal.
     printf("PIB: %.2f\n", PIB); // aqui será imprimido o PIB da cidade em ponto flutuante com 2 casas decimal.
     printf("Pontos Turisticos: %d\n", pontoTuristico); // aqui será imprimido o ponto turistico em Decimal.
-    printf("Densidade Populacional: %.2f\n", densidadePopulacional); // aqui o resultado da divisão da população pela Area.
-    printf("PIB Per Capita: %.2f\n", PIBPerCapita); // aqui o resultado da divisão do PIB pela população.
+    printf("Densidade Populacional: %.2f hab/km\n", densidadePopulacional); // aqui o resultado da divisão da população pela Area.
+    printf("PIB Per Capita: %.2f reais\n", PIBPerCapita); // aqui o resultado da divisão do PIB pela população.
 
     printf("Carta 2:\n"); 
     printf("Estado: %c\n", Estado2); 
@@ -95,8 +95,8 @@ int main() {
     printf("Área(Km): %.2f\n", Area2); 
     printf("PIB: %.2f\n", PIB2); 
     printf("Pontos Turisticos: %d\n", pontoTuristico2); 
-    printf("Densidade Populacional: %.2f\n", densidadePopulacional2);
-    printf("PIB Per Capita: %.2f\n", PIBPerCapita2);
+    printf("Densidade Populacional: %.2f hab/km\n", densidadePopulacional2);
+    printf("PIB Per Capita: %.2f reais\n", PIBPerCapita2);
 
     return 0;
 
